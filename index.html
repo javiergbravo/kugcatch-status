@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; connect-src 'self' https://raw.githubusercontent.com https://api.github.com; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>KugCatch Status — unknown</title>
+<style>
+body{font:16px/1.6 system-ui,sans-serif;max-width:44rem;margin:3rem auto;padding:0 1rem;color:#202020;background:#fff}li{margin:.65rem 0}.muted{color:#555}a{color:#175ca0}a:focus-visible{outline:3px solid;outline-offset:4px}h1,h2{line-height:1.2}
+@media(prefers-color-scheme:dark){body{background:#161616;color:#eee}.muted{color:#bbb}a{color:#90c6ff}}
+</style>
+</head>
+<body>
+<h1>KugCatch service status</h1>
+<p class="muted">Review pipeline, portal and billing. Incident updates are published by the service owner.</p>
+<h2>Incidents</h2>
+<ul id="incidents" aria-live="polite"><li>Incident status unknown. Loading updates…</li></ul>
+<h2>Automatic checks</h2>
+<ul id="checks" aria-live="polite"><li>Availability unknown. Loading checks…</li></ul>
+<p class="muted">Checks measure endpoint liveness, not completed reviews or successful payments. Updates refresh every five minutes. Missing or stale checks show as unknown.</p>
+<p>Support: <a href="mailto:support@kugcatch.com">support@kugcatch.com</a>. For a GitHub outage, see <a href="https://www.githubstatus.com/">GitHub Status</a>.</p>
+<noscript><p>JavaScript is required to load checks. Availability is unknown; contact support for an update.</p></noscript>
+<script src="status.js"></script>
+</body>
+</html>
