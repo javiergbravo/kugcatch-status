@@ -87,7 +87,7 @@ async function refresh() {
     ]);
     if (incidentResult.status === "rejected") {
       incidentsKnown = false;
-      show("incidents", ["Incident list unavailable. Incident status unknown; contact support@kugcatch.com."]);
+      show("incidents", ["Incident list unavailable. Incident status unknown."]);
     }
     if (checkResult.status === "rejected") {
       lastCheck = null;
